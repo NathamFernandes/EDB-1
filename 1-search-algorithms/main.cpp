@@ -41,6 +41,7 @@ int main()
             keyIndex = linearSearch(key, vector, size);
             break;
         case 2:
+            keyIndex = linearSearch(key, vector, size, ASC);
             break;
         default:
             break;

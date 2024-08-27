@@ -1,6 +1,12 @@
 #ifndef LINEARSEARCH_H
 #define LINEARSEARCH_H
 
-int linearSearch(int key, int *vector, int size);
+enum Order
+{
+    ASC = 1,
+    DESC = 2,
+};
+
+int linearSearch(int key, int *vector, int size, int order = 0);
 
 #endif
