@@ -4,13 +4,16 @@
 
 int linearSearch(int key, int *vector, int size)
 {
-    unsigned int pos = 0;
+    if (size <= 0)
+        return -1;
 
-    while (pos < size)
+    int position = 0;
+
+    while (position < size)
     {
-        if (vector[pos] == key)
-            return pos;
-        pos++;
+        if (vector[position] == key)
+            return position;
+        position++;
     }
 
     return -1;
